@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ActiveBox</title>
+	<meta name="description" content="Верста, практика верстки, ActiveBox" >
+	<meta name="keywords" content="Lesson.Practika verstka" >
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#006f07">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#7f7d99">
+	<!-- /favicon -->
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+		<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body id="body">
+		<!-- Sprite-->
+		<svg style="display: none;">
+			<symbol id="f" viewBox="0 0 24 24">
+				<g>
+					<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+				</g>
+			</symbol>
+			<symbol id="t" viewBox="0 0 512 512">
+				<g>
+					<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+						c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+						c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+						c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+						c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+						c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+						C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+						C480.224,136.96,497.728,118.496,512,97.248z"/>
+				</g>
+			</symbol>
+			<symbol id="lin" viewBox="0 0 512 512">
+				<g>
+					<path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/>
+				</g>
+			</symbol>
+
+			<symbol id="arrow" viewBox="0 0 970.504 970.503">
+				<g>
+					<path d="M120.027,962.802c26.6,0,53.5-8.801,75.7-27l288.1-234.7l290.899,237c22.301,18.1,49.101,27,75.7,27
+						c34.8,0,69.4-15.101,93.101-44.2c41.899-51.4,34.1-127-17.2-168.8l-366.7-298.8c-44.1-36-107.5-36-151.6,0l-363.8,296.5
+						c-51.4,41.8-59.1,117.399-17.3,168.8C50.727,947.702,85.227,962.802,120.027,962.802z"/>
+					<path d="M120.027,541.902c26.6,0,53.5-8.8,75.7-27l288.1-234.7l290.899,237c22.301,18.101,49.101,27,75.7,27
+						c34.8,0,69.4-15.1,93.101-44.2c41.899-51.399,34.1-127-17.2-168.8l-366.7-298.8c-44.1-36-107.5-36-151.6,0l-363.8,296.4
+						c-51.4,41.9-59.1,117.5-17.3,168.9C50.727,526.802,85.227,541.902,120.027,541.902z"/>
+				</g>
+			</symbol>
+		</svg>
+
+
+		<header class="header" id="header">
+		<div class="container">
+			<div class="header__intro">
+				<div class="logo">
+					<img class="logo" src="img/ActiveBox.png" alt="Logo">
+				</div>
+				
+				<nav class="nav" id="nav">
+					<a href="#" class="nav__item" data-scroll="#features">Features</a>
+					<a href="#" class="nav__item" data-scroll="#works">Works</a>
+					<a href="#" class="nav__item" data-scroll="#ourTeam">Our Team</a>
+					<a href="#" class="nav__item" data-scroll="#testimonials">Testimonials</a>
+					<a href="#" class="nav__item" data-scroll="#download">Download</a>
+				</nav>
+				<button class="burger" id="burger">
+					<span class="burger__item">menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<div class="title vh">
+		<div class="container">
+				<h1 class="title__caption">Your Favorite One Page Multi Purpose Template</h1>
+				<h3 class="title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h3>
+				<a href="#" class="btn">Find Out More</a>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="features" id="features">
+			<div class="features__item feature">
+				<img src="img/features/feature_1.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Easily customised</h6>
+				<div class="feature__text">
+					Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
+				</div>
+			</div>
+			<div class="features__item feature">
+				<img src="img/features/feature_2.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Responsive ready</h6>
+				<div class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+			</div>
+			<div class="features__item feature">
+				<img src="img/features/feature_3.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Modern design</h6>
+				<div class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+			</div>
+			<div class="features__item feature">
+				<img src="img/features/feature_4.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Clean code</h6>
+				<div class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+			</div>
+			<div class="features__item feature">
+				<img src="img/features/feature_5.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Ready to ship</h6>
+				<div class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+			</div>
+			<div class="features__item feature">
+				<img src="img/features/feature_6.png" class="feature__img" alt="feature">
+				<h6 class="feature__name">Dowload for free</h6>
+				<div class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+			</div>
+		</div>
+	</div>
+	<div class="projects" id="works">
+		<div class="projects__item project">
+			<img src="img/projects/Layer_1.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+
+		<div class="projects__item">
+			<img src="img/projects/Layer_2.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_3.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_4.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_5.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_6.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_7.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+		<div class="projects__item">
+			<img src="img/projects/Layer_8.jpg" class="project_img" alt="projects__item">
+			<div class="project_description">
+				<h4 class="project_name">Project name</h4>
+				<div class="project_text">User Interface Design</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="specialists" id="ourTeam">
+			<div class="specialists__card card">
+				<img src="img/network/foto_1.jpg" class="specialist_foto" alt="foto">
+				<div class="specialist_name">Ruth Woods</div>
+				<div class="specialist_profession">Founder, Ceo</div>
+				<div class="specialist_responsibilities">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+				</div>
+				<div class="network">
+					<a class="network_item" href="https://www.facebook.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#f"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://twitter.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#t"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://www.linkedin.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#lin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="specialists__card card">
+				<img src="img/network/foto_2.jpg" class="specialist_foto" alt="foto">
+				<div class="specialist_name">Timothy Reed</div>
+				<div class="specialist_profession">Co-Founder, Developer</div>
+				<div class="specialist_responsibilities">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+				</div>
+				<div class="network">
+					<a class="network_item" href="https://www.facebook.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#f"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://twitter.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#t"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://www.linkedin.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#lin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="specialists__card card">
+				<img src="img/network/foto_3.jpg" class="specialist_foto" alt="foto">
+				<div class="specialist_name">Victoria Valdez</div>
+				<div class="specialist_profession">UI Designer</div>
+				<div class="specialist_responsibilities">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+				</div>
+				<div class="network">
+					<a class="network_item" href="https://www.facebook.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#f"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://twitter.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#t"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://www.linkedin.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#lin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="specialists__card card">
+				<img src="img/network/foto_4.jpg" class="specialist_foto" alt="foto">
+				<div class="specialist_name">Beverly Little</div>
+				<div class="specialist_profession">Data Scientist</div>
+				<div class="specialist_responsibilities">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+				</div>
+				<div class="network">
+					<a class="network_item" href="https://www.facebook.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#f"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://twitter.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#t"></use>
+						</svg>
+					</a>
+					<a class="network_item" href="https://www.linkedin.com/" target="_blank">
+						<svg class="network_img">
+							<use href="#lin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- slider -->
+
+	<div class="slider" id="testimonials">
+		<div class="slider__container">
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="slider__foto">
+						<img class="slider__img" src="img/slider/slider_1.jpg" alt="foto">
+					</div>
+					<div class="slider__recallings recalling">
+						<div class="recalling__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="recalling__info">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="slider__foto">
+						<img class="slider__img" src="img/slider/slider_2.jpg" alt="foto">
+					</div>
+					<div class="slider__recallings recalling">
+						<div class="recalling__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="recalling__info">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="slider__foto">
+						<img class="slider__img" src="img/slider/slider_3.jpg" alt="foto">
+					</div>
+					<div class="slider__recallings recalling">
+						<div class="recalling__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="recalling__info">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="slider__foto">
+						<img class="slider__img" src="img/slider/slider_4.jpg" alt="foto">
+					</div>
+					<div class="slider__recallings recalling">
+						<div class="recalling__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="recalling__info">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="slider__foto">
+						<img class="slider__img" src="img/slider/slider_5.jpg" alt="foto">
+					</div>
+					<div class="slider__recallings recalling">
+						<div class="recalling__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="recalling__info">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="download" id="download">
+			<h3 class="download__question">Are You Ready to Start? Download Now For Free!</h3>
+			<div class="download__text">Fusce dapibus, tellus ac cursus commodo</div>
+			<a href="#" class="btn download__btn">Download Here</a>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__item">
+					<h4 class="footer__title">Location</h4>
+					<address class="footer__text">
+						<p>3481 Melrose</p>
+						<p>Beverly Hills, CA 90210</p>
+					</address>
+				</div>
+				<div class="footer__item">
+					<h4 class="footer__title">Share with Love</h4>
+					<div class="network">
+						<a class="network_item" href="https://www.facebook.com/" target="_blank">
+							<svg class="network_img">
+								<use href="#f"></use>
+							</svg>
+						</a>
+						<a class="network_item" href="https://twitter.com/" target="_blank">
+							<svg class="network_img">
+								<use href="#t"></use>
+							</svg>
+						</a>
+						<a class="network_item" href="https://www.linkedin.com/" target="_blank">
+							<svg class="network_img">
+								<use href="#lin"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__item">
+					<h4 class="footer__title">About ActiveBox</h4>
+					<div class="footer__text">
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="copyright__inner">
+				<p>Copyright © 2015 ActiveBox. All Rights Reserved<br>Made with 
+					<span class="heart">&#9829;</span>
+					<span class="color_white">by Kamal Chaneman</span></p>
+			</div>
+		</div>
+	</div>
+	<a class="arrow" data-scroll="#body" id="button-arrow">
+		<svg class="arrow-img">
+			<use href="#arrow"></use>
+		</svg>
+	</a>
+	<hr>
+	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
